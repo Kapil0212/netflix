@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        text-align: center;
+        color: green;
+        font-size: xx-large;
+    }
+</style>
+<body>
+    <!-- <button onclick="func()">click me</button> -->
+    <h1 id="head"></h1>
+    
+</body>
+<script>
+     let i=0;
+        let array='its your boy badshah';
+    function func()
+    {
+       
+     if(i<array.length)
+     {
+        document.querySelector('#head').innerHTML+=array.charAt(i);
+        i++;
+        setTimeout(func,50)
+        
+    }
+    document.querySelector('#head').innerHTML="" 
+    }
+    
+    func();
+    // setInterval(func,5000);
+
+</script>
+</html>
